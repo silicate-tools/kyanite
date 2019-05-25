@@ -1,7 +1,0 @@
-node_modules/
-.nyc_output
-coverage/
-.DS_Store
-tmp.js
-benching.js
-exp.js
