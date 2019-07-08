@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>number/subtract.js - Documentation</title>
+    <title>list/startsWith.js - Documentation</title>
     
     <meta name="description" content="A small library of pure functional utilities to make life easier and data better" />
     
@@ -39,7 +39,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">number/subtract.js</h1>
+    <h1 class="page-title">list/startsWith.js</h1>
     
 
     
@@ -49,34 +49,40 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import _curry2 from '../_internals/_curry2'
+            <pre class="prettyprint source linenums"><code>import compose from '../function/compose'
+import _curry2 from '../_internals/_curry2'
+import deepEq from '../function/deepEq'
+import slice from './slice'
 
 /**
- * @name subtract
+ * @name startsWith
  * @function
- * @since v0.1.0
- * @category Number
- * @sig Number -> Number -> Number
- * @description Subtracts the provided numbers
- * @param {Number} a The subtrahend number to subtract with
- * @param {Number} b The minuend number to subtract from
- * @return {Number} The difference of the numbers
- *
+ * @since v0.14.0
+ * @category List
+ * @sig
+ * a -> List -> Boolean
+ * String -> String -> Boolean
+ * @description Checks to see if the provided value is at the beginning of a given list
+ * @param {String|Array} a The value to check for at the beginning of the list
+ * @param {String|Array} list The list to check through
+ * @return {Boolean} If the value is at the end of the provided list
  * @example
- * import { subtract } from 'kyanite'
+ * import { startsWith } from 'kyanite'
  *
- * subtract(2, 1) // => 1
+ * startsWith('c' , 'cab') // => true
+ * startsWith(['c'], ['c', 'b', 'a']) // => true
+ * startsWith('b', 'abc') // => false
+ * startsWith(['b'], ['a', 'b', 'c']) // => false
  *
  * // It's also curried
+ * const fn = startsWith('c')
  *
- * const sub = subtract(5)
- *
- * sub(3) // => 2
- * sub(2) // => 3
+ * fn('cab') // => true
+ * fn('abc') // => false
  */
-const subtract = (a, b) => b - a
+const startsWith = (a, list) => compose(deepEq(a), slice(0, a.length), list)
 
-export default _curry2(subtract)
+export default _curry2(startsWith)
 </code></pre>
         </article>
     </section>
