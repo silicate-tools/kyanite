@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>object/plan.js - Documentation</title>
     
     <meta name="description" content="A small library of pure functional utilities to make life easier and data better" />
     
@@ -39,138 +39,54 @@
 
 <div id="main">
     
+    <h1 class="page-title">object/plan.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import _curry2 from '../_internals/_curry2'
+import _assocǃ from '../_internals/_assocǃ'
+import reduce from '../function/reduce'
 
+/**
+ * @name plan
+ * @function
+ * @since v0.1.0
+ * @category Object
+ * @sig Object -> Object -> Object
+ * @description Uses a schema to allow you to plan out functions being ran against values within your object
+ * @param {Object} schema The object of functions we want to apply
+ * @param {Object} obj The object to apply our functions too
+ * @return {Object} A new object with the updated data from our applied functions
+ * @example
+ * import { plan } from 'kyanite'
+ *
+ * const testFns = {
+    a: x => x * 2,
+    b: x => x + 10
+  }
+ *
+ * plan(testFns, { a: 5, b: 10 }) // => { a: 10, b: 20 }
+ *
+ * // It's also curried
+ *
+ * const p = plan(testFns)
+ *
+ * p({ a: 5, b: 10 }) // => { a: 10, b: 20 }
+ */
+const plan = (schema, obj) =>
+  Object.assign({}, obj, reduce((k, acc) =>
+    !obj.hasOwnProperty(k) ? acc : _assocǃ(acc, k, schema[k](obj[k])), {}, Object.keys(schema)))
 
-
-
-
-
-
-
-
-    
-
-
-    <section class="readme">
-        <article><p align=center>
-  <a href="https://kyanite.dusty.codes/" title="Kyanite Documentation">
-    <img alt="Kyanite Logo" src="https://user-images.githubusercontent.com/8997380/48008308-69174500-e0e7-11e8-9a57-ebd558f094f8.png">
-  </a>
-</p>
-<br />
-<p align=center>
-  A light weight functional JavaScript library that only depends on itself.
-</p>
-<p align=center>
-  <a href="./LICENSE">
-    <img
-      alt="license:mit"
-      src="https://img.shields.io/badge/license-mit-green.svg?style=flat-square"
-    />
-  </a>
-  <a href="https://www.npmjs.com/package/kyanite">
-    <img alt="Npm Version" src="https://img.shields.io/npm/v/kyanite.svg?style=flat-square">
-  </a>
-  <a href="https://david-dm.org/dhershman1/kyanite">
-    <img alt="Dependencies" src="https://img.shields.io/david/dhershman1/kyanite.svg?style=flat-square">
-  </a>
-  <a href="https://david-dm.org/dhershman1/kyanite?type=dev">
-    <img alt="Dev Dependencies" src="https://img.shields.io/david/dev/dhershman1/kyanite.svg?style=flat-square">
-  </a>
-  <a href="https://circleci.com/gh/dhershman1/kyanite/tree/master">
-    <img alt="Build Status" src="https://circleci.com/gh/dhershman1/kyanite/tree/master.svg?style=svg">
-  </a>
-  <a href="https://codecov.io/gh/dhershman1/kyanite">
-    <img alt="Coverage" src="https://codecov.io/gh/dhershman1/kyanite/branch/master/graph/badge.svg">
-  </a>
-</p>
-<br />
-<p align=center>
-  <a href="https://github.com/standard/standard">
-    <img alt="Standard JS" src="https://cdn.rawgit.com/standard/standard/master/badge.svg">
-  </a>
-</p>
-<h2 id="why-kyanite%3F">Why Kyanite?</h2>
-<p>Because I think mineral names are cool</p>
-<h2 id="contents">Contents</h2>
-<ul>
-<li><a href="https://github.com/dhershman1/kyanite/blob/master/CHANGELOG.md">View the Changelog</a></li>
-<li><a href="https://dhershman1.github.io/kyanite/">View the Documentation</a></li>
-<li><a href="#philosophy">Philosophy</a></li>
-<li><a href="#key-features">Key Features</a></li>
-<li><a href="#how-to">How To</a></li>
-<li><a href="#testing">Testing</a></li>
-<li><a href="#credit">Credit</a></li>
-</ul>
-<h2 id="philosophy">Philosophy</h2>
-<p>The goal for Kyanite is to be stripped down, light weight, and intuitive. The idea is to be performant and easy to use in a functional setting, making it simple to build reusable functions in your code base with powerful and organized algorithmic pipes. Ultimately, Kyanite’s continued growth and improvement will support the growth and improvement of the JavaScript community</p>
-<h2 id="key-features">Key Features</h2>
-<ul>
-<li>Purely Functional - This was a main focus for the project. I wanted it to be an easy to use, functional system while also being completely pure by making use of piping and transducers to boost performance.</li>
-<li>Single type utility functions - Theoretically, all of the functionality is based around accepting a single data type, doing what it does, and giving you back a result, thus making it reliable, stable, and lightweight.</li>
-<li>Everything is curried! Setup static in one spot and then pass the rest of the dynamic data in later.</li>
-<li>Data last ideology</li>
-</ul>
-<h2 id="how-to">How To</h2>
-<p>With a CDN</p>
-<pre class="prettyprint source lang-html"><code>&lt;!-- It is recommended to replace the @latest with a strict version number for production -->
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/kyanite@latest/dist/kyanite.min.js&quot;>&lt;/script>
-&lt;!-- To use the debug friendly kyanite simply remove .min from the filename -->
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/kyanite@latest/dist/kyanite.js&quot;>&lt;/script>
-&lt;script>
-  const K = kyanite
-
-  K.isEmpty({})
-&lt;/script>
+export default _curry2(plan)
 </code></pre>
-<p>Or installing with <code>npm i kyanite</code> and then:</p>
-<p>Standard module system</p>
-<pre class="prettyprint source lang-js"><code>// This will use the module path in the package.json (src/index.js)
-import * as K from 'kyanite'
-// However if you want to grab the dev version
-import * as K from 'kyanite/dist/kyanite.js'
-</code></pre>
-<p>Common JS</p>
-<pre class="prettyprint source lang-js"><code>// For the prod minified version
-const K = require('kyanite')
-// For the dev/debug friendly version
-const K = require('kyanite/dist/kyanite.js')
-</code></pre>
-<p>Local copy script tag</p>
-<pre class="prettyprint source lang-html"><code>&lt;!-- To use the prod minified version -->
-&lt;script src=&quot;/path/to/dist/kyanite.min.js&quot;>&lt;/script>
-&lt;!-- To use the dev/debug friendly version -->
-&lt;script src=&quot;/path/to/dist/kyanite.js&quot;>&lt;/script>
-&lt;script>
-  const K = kyanite
-
-  K.isEmpty({})
-&lt;/script>
-</code></pre>
-<h2 id="testing">Testing</h2>
-<p>Kyanite follows the <a href="http://testanything.org/">tap</a> setup using the <a href="https://github.com/substack/tape">tape</a> testing suite.</p>
-<p>To run the tests:</p>
-<ul>
-<li><code>git clone</code> the repo</li>
-<li><code>cd</code> into the repo folder</li>
-<li>Run <code>npm i</code></li>
-<li>Run <code>npm t</code></li>
-</ul>
-<h2 id="credit">Credit</h2>
-<p>A lot of the if not most of the inpiration for this library came from 2 libraries I follow closely, Primarily most of it stems from:</p>
-<ul>
-<li><a href="https://github.com/abstract-tools/foreword">foreword</a> by <a href="https://github.com/abstract-tools">Abstract Tools</a> which is a very nice and easy to use library developed by a close friend and mentor. This is where a lot of functionality ideas came from I can't recommend it enough.</li>
-<li><a href="http://ramdajs.com/">Ramdajs</a> by <a href="https://github.com/ramda">Ramda</a> a beautiful and feature packed library where the original idea started</li>
-</ul></article>
+        </article>
     </section>
-
-
 
 
 
