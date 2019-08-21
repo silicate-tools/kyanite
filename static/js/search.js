@@ -3,6 +3,10 @@ const navItems = Array.from(document.querySelectorAll('.nav__item'))
 
 /* eslint-disable no-labels */
 
+/* global hljs */
+
+hljs.initHighlightingOnLoad()
+
 // FuzzySearch taken directly from kyanite!
 const fuzzySearch = (needle, haystack) => {
   const hLen = haystack.length

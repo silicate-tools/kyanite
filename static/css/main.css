@@ -121,6 +121,11 @@ footer {
   margin-bottom: 0.1rem;
 }
 
+.wrapper p > img {
+  width: 100%;
+  height: 100%;
+}
+
 .filter {
   margin-left: 1.2rem;
   margin-top: 0.5rem;
