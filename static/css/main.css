@@ -69,11 +69,15 @@ aside {
   font-size: 14px;
 }
 
+.pagenav__links {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .pagenav__link {
   text-decoration: none;
   padding: 0.3rem;
   color: var(--primary-lighter);
-  border-right: 2px solid #FFF;
 }
 
 .pagenav__link:hover {
