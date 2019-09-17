@@ -1,0 +1,680 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><title>Kyanite - Documentation</title><link href="static/css/main.css" rel="stylesheet"><link href="static/css/hl.css" rel="stylesheet"></head><body id="root"><div class="grid"><input type="checkbox" id="nav-trigger" class="nav-trigger"><label for="nav-trigger" class="navicon-button x"><div class="navicon"></div></label><label for="nav-trigger" class="overlay"></label><aside class="side-nav"><div class="pagenav"><p class="pagenav__title"><strong>Kyanite</strong><span class="pagenav__version"> v1.0.0</span></p><p class="pagenav__links"><a class="pagenav__link" href="index.html">Home</a><a class="pagenav__link" href="documentation.html">Documentation</a><a class="pagenav__link" href="changelog.html">Changelog</a><a class="pagenav__link" href="https://github.com/dhershman1/kyanite">Github</a></p></div><input class="filter" type="text" id="filter" placeholder="Search Category or Function name"></input><ul class="nav"><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#chunk"><span class="nav__name">chunk</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#concatMap"><span class="nav__name">concatMap</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#countBy"><span class="nav__name">countBy</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#difference"><span class="nav__name">difference</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#drop"><span class="nav__name">drop</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#dropWhile"><span class="nav__name">dropWhile</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#ensureArray"><span class="nav__name">ensureArray</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#every"><span class="nav__name">every</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#everyPass"><span class="nav__name">everyPass</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#filter"><span class="nav__name">filter</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#find"><span class="nav__name">find</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#findIndex"><span class="nav__name">findIndex</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#fold"><span class="nav__name">fold</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#groupBy"><span class="nav__name">groupBy</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#insert"><span class="nav__name">insert</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#intersection"><span class="nav__name">intersection</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#join"><span class="nav__name">join</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#juxt"><span class="nav__name">juxt</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#map"><span class="nav__name">map</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#max"><span class="nav__name">max</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#maxBy"><span class="nav__name">maxBy</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#min"><span class="nav__name">min</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#minBy"><span class="nav__name">minBy</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#partition"><span class="nav__name">partition</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#prepend"><span class="nav__name">prepend</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#reduceRight"><span class="nav__name">reduceRight</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#reject"><span class="nav__name">reject</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#remove"><span class="nav__name">remove</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#some"><span class="nav__name">some</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#somePass"><span class="nav__name">somePass</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#sort"><span class="nav__name">sort</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#sortBy"><span class="nav__name">sortBy</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#sortWith"><span class="nav__name">sortWith</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#take"><span class="nav__name">take</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#takeWhile"><span class="nav__name">takeWhile</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#union"><span class="nav__name">union</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#uniq"><span class="nav__name">uniq</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#uniqBy"><span class="nav__name">uniqBy</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#update"><span class="nav__name">update</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#zip"><span class="nav__name">zip</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#addIndex"><span class="nav__name">addIndex</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#always"><span class="nav__name">always</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#and"><span class="nav__name">and</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#ap"><span class="nav__name">ap</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#apply"><span class="nav__name">apply</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#applyN"><span class="nav__name">applyN</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#ascend"><span class="nav__name">ascend</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#ascendBy"><span class="nav__name">ascendBy</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#both"><span class="nav__name">both</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#branch"><span class="nav__name">branch</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#complement"><span class="nav__name">complement</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#compose"><span class="nav__name">compose</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#composeP"><span class="nav__name">composeP</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#count"><span class="nav__name">count</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#curry"><span class="nav__name">curry</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#curryN"><span class="nav__name">curryN</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#deepEq"><span class="nav__name">deepEq</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#defaultTo"><span class="nav__name">defaultTo</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#descend"><span class="nav__name">descend</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#descendBy"><span class="nav__name">descendBy</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#either"><span class="nav__name">either</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#encase"><span class="nav__name">encase</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#eq"><span class="nav__name">eq</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#eqBy"><span class="nav__name">eqBy</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#flip"><span class="nav__name">flip</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#gt"><span class="nav__name">gt</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#gte"><span class="nav__name">gte</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#has"><span class="nav__name">has</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#identity"><span class="nav__name">identity</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#isEmpty"><span class="nav__name">isEmpty</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#isNil"><span class="nav__name">isNil</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#lt"><span class="nav__name">lt</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#lte"><span class="nav__name">lte</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#not"><span class="nav__name">not</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#notEq"><span class="nav__name">notEq</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#on"><span class="nav__name">on</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#or"><span class="nav__name">or</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#pipe"><span class="nav__name">pipe</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#pipeP"><span class="nav__name">pipeP</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#reduce"><span class="nav__name">reduce</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#reduced"><span class="nav__name">reduced</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#type"><span class="nav__name">type</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#unless"><span class="nav__name">unless</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="Function"><a class="nav__link" href="documentation.html#when"><span class="nav__name">when</span><span class="nav__type tag">Function</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#concat"><span class="nav__name">concat</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#endsWith"><span class="nav__name">endsWith</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#first"><span class="nav__name">first</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#includes"><span class="nav__name">includes</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#last"><span class="nav__name">last</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="Array"><a class="nav__link" href="documentation.html#length"><span class="nav__name">length</span><span class="nav__type tag">Array</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#nth"><span class="nav__name">nth</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#reverse"><span class="nav__name">reverse</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#slice"><span class="nav__name">slice</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="List"><a class="nav__link" href="documentation.html#startsWith"><span class="nav__name">startsWith</span><span class="nav__type tag">List</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#add"><span class="nav__name">add</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#between"><span class="nav__name">between</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#clamp"><span class="nav__name">clamp</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#dec"><span class="nav__name">dec</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#divide"><span class="nav__name">divide</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#factors"><span class="nav__name">factors</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#gcd"><span class="nav__name">gcd</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#inc"><span class="nav__name">inc</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#isEven"><span class="nav__name">isEven</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#isOdd"><span class="nav__name">isOdd</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#isPrime"><span class="nav__name">isPrime</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#isZero"><span class="nav__name">isZero</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#lcm"><span class="nav__name">lcm</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#mean"><span class="nav__name">mean</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#median"><span class="nav__name">median</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#mod"><span class="nav__name">mod</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#multiples"><span class="nav__name">multiples</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#multiply"><span class="nav__name">multiply</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#negate"><span class="nav__name">negate</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#pow"><span class="nav__name">pow</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#product"><span class="nav__name">product</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#range"><span class="nav__name">range</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#rem"><span class="nav__name">rem</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#round"><span class="nav__name">round</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#subtract"><span class="nav__name">subtract</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#sum"><span class="nav__name">sum</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Number"><a class="nav__link" href="documentation.html#within"><span class="nav__name">within</span><span class="nav__type tag">Number</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#amend"><span class="nav__name">amend</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#any"><span class="nav__name">any</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#draft"><span class="nav__name">draft</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#height"><span class="nav__name">height</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#omit"><span class="nav__name">omit</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#over"><span class="nav__name">over</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#path"><span class="nav__name">path</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#pathOr"><span class="nav__name">pathOr</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#plan"><span class="nav__name">plan</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#prop"><span class="nav__name">prop</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#propEq"><span class="nav__name">propEq</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#propOr"><span class="nav__name">propOr</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#props"><span class="nav__name">props</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#sift"><span class="nav__name">sift</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#whole"><span class="nav__name">whole</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="Object"><a class="nav__link" href="documentation.html#withDefaults"><span class="nav__name">withDefaults</span><span class="nav__type tag">Object</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#capitalize"><span class="nav__name">capitalize</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#fuzzySearch"><span class="nav__name">fuzzySearch</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#match"><span class="nav__name">match</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#replace"><span class="nav__name">replace</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#split"><span class="nav__name">split</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#test"><span class="nav__name">test</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#toLower"><span class="nav__name">toLower</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#toUpper"><span class="nav__name">toUpper</span><span class="nav__type tag">String</span></a></li><li class="nav__item" data-cat="String"><a class="nav__link" href="documentation.html#trim"><span class="nav__name">trim</span><span class="nav__type tag">String</span></a></li></ul></aside><main><div class="wrapper"><h1 id="changelog">Changelog</h1>
+<h2 id="v100">v1.0.0</h2>
+<h3 id="breaking-changes">BREAKING CHANGES</h3>
+<ul>
+<li><code>size</code> was removed you can use <code>count</code> instead</li>
+<li><code>factors</code> no longer handles negative numbers (see improved section)<ul>
+<li>This can be accounted for with using the <code>negate</code> function</li>
+</ul>
+</li>
+<li><code>apply</code> only take a single param instead of an array of params now<ul>
+<li>You can use <code>applyN</code> instead if you wish to use the old functionality</li>
+</ul>
+</li>
+</ul>
+<h3 id="new">New</h3>
+<ul>
+<li>Added a <code>withDefaults</code> function which will populate an object with default values if they don&#39;t exist within the data provided</li>
+<li>Added a <code>multiples</code> function<ul>
+<li>Stress testing seems to point that it can handle up to 300 million limits in about 1.4s, but anything 400mil+ breaks the stack heap</li>
+<li>If you need to go that high may be wise to look into an arithmatic library</li>
+</ul>
+</li>
+<li>Added <code>applyN</code> which is taking over <code>apply</code>&#39;s old functionality</li>
+</ul>
+<h3 id="improved">Improved</h3>
+<ul>
+<li>All dependencies upgraded and audit fixes added</li>
+<li>Added some extra unit tests</li>
+<li>Large optimizations for <code>factors</code> re wrote the function and it should be able to handle extremely large numbers now<ul>
+<li>You won&#39;t see a huge performance boost on normal numbers within the hundred thousands maybe a few miliseconds this change was mostly to enhance factors so it can handle big integers better</li>
+<li>Note: This does not mean the new <code>BigInt</code> data type</li>
+</ul>
+</li>
+<li>Switched over to use the <a href="https://github.com/dhershman1/pinet#readme">pinet</a> engine for building the docs</li>
+<li>Cleaned up <code>isPrime</code> slightly, debating if the trial division approach is still best or not</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>CI breaking the CNAME definitions</li>
+</ul>
+<h2 id="v0140">v0.14.0</h2>
+<h3 id="breaking-changes-1">BREAKING CHANGES</h3>
+<ul>
+<li>Removed <code>memoizeWith</code> since it was more of a POC from ramda&#39;s code base<ul>
+<li>I will most likely look into re adding it with my own code if the need is there right now I just don&#39;t see it</li>
+</ul>
+</li>
+</ul>
+<h3 id="new-1">New</h3>
+<ul>
+<li>Added <code>startsWith</code> function, which should work just like <code>endsWith</code> but with the beginning of a list.</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li><code>isPrime</code> should handle edge cases like 0 a correctly now and return false instead of 0 (#121)</li>
+<li><code>endsWith</code> signature to reflect list instead of Array</li>
+</ul>
+<h2 id="v0130">v0.13.0</h2>
+<h3 id="breaking-changes-2">BREAKING CHANGES</h3>
+<ul>
+<li><code>find</code> has gone back to returning <code>undefined</code> instead of <code>null</code> for not found values</li>
+</ul>
+<h3 id="new-2">New</h3>
+<ul>
+<li>Added <code>fold</code> function which runs a <code>reduce</code> without an initial accumulator</li>
+<li>Added the <code>propOr</code> Function which returns the value of a property from an object or the provided default value</li>
+<li>CircleCI will now handle publishing the documentation to the <code>gh-pages</code> branch</li>
+</ul>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>Documentation for functions showing up <code>deprecated</code> when they were actually not</li>
+<li>Documentation for <code>join</code> moved it to the <code>Array</code> Category, and fixed a typo in it&#39;s example</li>
+<li>Documentation for <code>apply</code> showed incorrect curry examples</li>
+</ul>
+<h3 id="improved-1">Improved</h3>
+<ul>
+<li><code>min</code> is now using the <code>fold</code> function</li>
+<li>Finally improved the documentation process so now documentation changes won&#39;t flood the PRs!</li>
+</ul>
+<h2 id="v0122">v0.12.2</h2>
+<h3 id="new-3">New</h3>
+<ul>
+<li>Added <code>propEq</code> function which takes a object property value and compares it against a given value to see if it&#39;s equal</li>
+<li>Added <code>notEq</code> function which checks if the provided values are not equal to each other</li>
+</ul>
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+<li>The documentation for <code>and</code> should now reflect correctly on the return and params</li>
+</ul>
+<h2 id="v0121">v0.12.1</h2>
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+<li><code>pathOr</code> and <code>path</code> breaking on <code>null</code> value</li>
+</ul>
+<h2 id="v0120">v0.12.0</h2>
+<h3 id="breaking-changes-3">BREAKING CHANGES</h3>
+<ul>
+<li><code>ascend</code> and <code>descend</code> are no longer curried since they&#39;re meant to be sort based functionality and will always be called with their 2 params<ul>
+<li>The reasoning behind this is primarily performance, when using the function as intended there is a significant drop in performance</li>
+<li><strong>Note</strong>: <code>ascendBy</code> and <code>descendBy</code> have kept their curried status</li>
+</ul>
+</li>
+</ul>
+<h3 id="new-4">New</h3>
+<ul>
+<li>Added a <code>median</code> function which gets the median of an array of numbers</li>
+<li>Added a <code>mod</code> function which behaves like a modulo would in actual mathematics</li>
+<li>Added <code>somePass</code> function which takes an array of functions and passes a value through them until one passes or the end is reached</li>
+<li>Added <code>everyPass</code> function which takes an array of functions and passes a value through until one fails or the end is reached</li>
+<li>Added <code>chunk</code> function which chunks an array of data into smaller arrays</li>
+</ul>
+<h3 id="improved-2">Improved</h3>
+<ul>
+<li><code>pipe</code> &amp; <code>pipeP</code> are now using the Kyanite <code>reduce</code> giving them a small performance boost</li>
+</ul>
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+<li>Fixed a lot of signature displays through out the docs</li>
+<li>Documentation Fixes:<ul>
+<li><code>addIndex</code> description tweaks</li>
+<li><code>memoizeWith</code> added <a href="https://ramdajs.com">RamdaJs</a> credit since it&#39;s based mostly off their version</li>
+<li><code>lt</code>, <code>lte</code>, <code>gt</code>, and <code>gte</code> all had invalid examples in their documentation. This is addressed now</li>
+<li><code>find</code> and <code>deepEq</code> examples were incorrect</li>
+</ul>
+</li>
+</ul>
+<h2 id="v0113">v0.11.3</h2>
+<h3 id="new-5">New</h3>
+<ul>
+<li>Added <code>sum</code> function which takes an array of numbers and adds them together<ul>
+<li>TS type added</li>
+</ul>
+</li>
+<li>Added <code>product</code> function which takes an array of numbers and multiplies them together<ul>
+<li>TS type added</li>
+</ul>
+</li>
+<li>Switched over to <a href="https://circleci.com/">Circleci</a> and <a href="https://codecov.io/">Codecov</a></li>
+</ul>
+<h3 id="fixed-6">Fixed</h3>
+<ul>
+<li>TS types<ul>
+<li>Added <code>addIndex</code> type</li>
+<li>Added <code>memoizeWith</code> type</li>
+</ul>
+</li>
+<li><code>addIndex</code> Documentation</li>
+<li><code>slice</code> Documentation</li>
+</ul>
+<h2 id="v0112">v0.11.2</h2>
+<h3 id="new-6">New</h3>
+<ul>
+<li>Added a <code>addIndex</code> function which can be used on <code>map</code>, <code>filter</code>, or <code>reduce</code> like functions to have them return the index and full list back to your callback function</li>
+<li>Re added the <code>amend</code> function (for now?)</li>
+<li>Added <code>memoizeWith</code> function</li>
+</ul>
+<h2 id="v0110-0111">v0.11.0 (0.11.1)</h2>
+<h3 id="breaking-changes-4">Breaking Changes</h3>
+<ul>
+<li><code>factors</code> output has changed to be inclusive, it also works with negative numbers now<ul>
+<li>Example: <code>factors(-36) // =&gt; [1, 2, 3, 4, 6, 9, 12, 18, 36]</code></li>
+<li>You can easily get negative factors with <code>negate</code> and <code>map</code><ul>
+<li>e.g: <code>map(negate, factors(-36)) // =&gt; [-1, -2, -3, -4, -6, -9, -12, -18, -36]</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>empty</code> (and <code>isEmpty</code> until its removed) will now throw a type error for unsupported types<ul>
+<li><code>empty</code> supports the same types as <code>count</code> as well as <code>null</code> and <code>undefined</code></li>
+<li>e.g: <code>empty(1) // =&gt; TypeError: Unsupported type: Number</code></li>
+</ul>
+</li>
+<li><code>juxt</code> functionality changes. It&#39;s now a 2 param curried function that takes arrays for data<ul>
+<li>e.g: <code>juxt([Math.min, Math.max], [3, 4, 9, -3]) // =&gt; [-3, 9]</code></li>
+<li>Also moved it to be in the array category</li>
+</ul>
+</li>
+<li><code>ap</code> re written to be a proper S combinator function<ul>
+<li>e.g: <code>ap(x =&gt; y =&gt; x + y, z =&gt; z * 2, 2) // =&gt; 6</code></li>
+</ul>
+</li>
+<li>Removed <code>amend</code> function since it&#39;s really just a limited <code>Object.assign</code> no real use for it</li>
+</ul>
+<h3 id="new-7">New</h3>
+<ul>
+<li><code>reduce</code> now supports iterable types like <code>Map</code> and <code>Set</code></li>
+<li>Added <code>inc</code> Function which increases a number by 1</li>
+<li>Added <code>dec</code> Function which decreases a number by 1</li>
+<li>Added <code>isZero</code> Function which checks if the number passed in is equal to the number zero</li>
+<li>Added <code>size</code> Function which takes a map or set data type and returns its size<ul>
+<li><strong>Note</strong>: It is currently categorized under <code>Function</code> which may change in the future as I add more Map|Set friendly functions</li>
+</ul>
+</li>
+<li>Added <code>count</code> Function which takes any collection based data and counts the values within</li>
+<li>Added <code>reduced</code> Function which should be used with <code>reduce</code> or <code>reduceRight</code> as a short circuit for the function (see improved)</li>
+<li><code>has</code> is now generic for <code>Array</code>, <code>String</code>, <code>Object</code>, <code>Map</code>, and <code>Set</code> data types</li>
+<li>Added <code>within</code> Function which acts like <code>between</code> but is exclusive of the numbers provided</li>
+</ul>
+<h3 id="improved-3">Improved</h3>
+<ul>
+<li><code>isEmpty</code> now supports <code>Maps</code> and <code>Sets</code></li>
+<li>Slight increase in <code>partition</code> performance</li>
+<li>Slight increase in <code>omit</code> performance</li>
+<li>Added import example onto each function, so it&#39;s visible within the examples</li>
+<li><code>factors</code> had some typos in its docs</li>
+<li>Cleaned up <code>always</code> documentation</li>
+<li>Cleaned up <code>identity</code> documentation examples</li>
+<li>Cleaned up <code>type</code> to be more lightweight</li>
+<li>Completely re wrote <code>reduce</code> and <code>reduceRight</code><ul>
+<li>No breaking changes</li>
+<li>Both functions now support <code>reduced</code> which will short circuit out of the iteration and return the value</li>
+<li>This is a good strategy for performance boosts</li>
+</ul>
+</li>
+<li><code>reduce</code>, <code>reduceRight</code>, and <code>reduced</code> are all using the <code>@@transducer</code> protocol</li>
+<li>Moved <code>every</code>, <code>some</code>, <code>reject</code>, <code>filter</code>, and <code>find</code> to use this new flow giving them decent performance improvements</li>
+<li>Tweaked <code>height</code> function for a tiny performance boost</li>
+</ul>
+<h2 id="v0103">v0.10.3</h2>
+<h3 id="fixed-7">Fixed</h3>
+<ul>
+<li>Updated <strong>Dev</strong> Dependency <code>npm-run-all</code> to fix the critical security vulnerability</li>
+<li>Homepage url to point to <a href="https://kyanite.dusty.codes">https://kyanite.dusty.codes</a></li>
+</ul>
+<h2 id="v0102">v0.10.2</h2>
+<h3 id="new-8">New</h3>
+<ul>
+<li>Added <a href="https://www.typescriptlang.org/">TypeScript</a> Declarations file to bring in typings for functions</li>
+<li>Added <code>pathOr</code> function which works like path but allows a value to be returned rather than just <code>undefined</code></li>
+<li>Added <code>test</code> function which runs a regex test against a provided string</li>
+<li>Added <code>match</code> function which will match a string against some regex and build an array of matching strings</li>
+</ul>
+<h3 id="improved-4">Improved</h3>
+<ul>
+<li>README organization to help alleviate confusion</li>
+<li>Documentation for <code>partition</code>, <code>max</code>, <code>min</code>, <code>maxBy</code>, and <code>minBy</code> to be a bit easier to understand</li>
+</ul>
+<h3 id="fixed-8">Fixed</h3>
+<ul>
+<li><code>range</code> will no longer show up under the <code>Function</code> category</li>
+<li>Docs for <code>find</code> so that the return is accurate</li>
+<li>Docs for <code>omit</code> so that the description is accurate and makes sense, also made the param more verbose</li>
+<li>Docs for <code>path</code> to correct the description</li>
+<li>Docs for <code>or</code> to have the correct types associated with the values</li>
+<li>Docs for <code>concat</code> to correct it&#39;s signature</li>
+<li><code>List</code> type docs to depict String &amp; Array signatures or &quot;List&quot; signatures</li>
+</ul>
+<h2 id="v0101">v0.10.1</h2>
+<h3 id="fixed-9">Fixed</h3>
+<ul>
+<li><code>omit</code> documentation to show correct input</li>
+</ul>
+<h3 id="new-9">New</h3>
+<ul>
+<li>Added <code>over</code> function which applies a function over a object value</li>
+</ul>
+<h2 id="v0100">v0.10.0</h2>
+<h3 id="breaking-changes-5">Breaking Changes</h3>
+<h4 id="compatibility">Compatibility</h4>
+<ul>
+<li><strong>Dropped IE support</strong></li>
+<li><strong>Dropped modularity support please see issue <a href="https://github.com/dhershman1/kyanite/issues/61">#61</a> for more info</strong><ul>
+<li>In short, with the recent rollup versions currying is better supported for tree shaking</li>
+</ul>
+</li>
+</ul>
+<h4 id="removed">Removed</h4>
+<ul>
+<li>All deprecated functions<ul>
+<li><code>is</code>, <code>compact</code>, <code>compress</code>, <code>empty</code>, <code>deepClone</code>, <code>contains</code>, <code>strip</code>, <code>clone</code>, <code>head</code>, <code>tail</code>, <code>pluck</code>, and <code>words</code></li>
+</ul>
+</li>
+<li><code>assign</code>, <code>entries</code>, and <code>values</code> Since we dropped IE support you shouldn&#39;t need these functions</li>
+<li><code>unzip</code> - Rare use case limited usability</li>
+<li><code>defaults</code> - Rare use case, you can achieve similar with <code>Object.assign</code> and small tweaking</li>
+</ul>
+<h4 id="rename">Rename</h4>
+<ul>
+<li><code>sub</code> to <code>subtract</code></li>
+<li><code>mul</code> to <code>multiply</code></li>
+<li><code>div</code> to <code>divide</code></li>
+<li><code>identical</code> to <code>eq</code></li>
+<li><code>isEqual</code> to <code>deepEq</code></li>
+</ul>
+<h4 id="other">Other</h4>
+<ul>
+<li><code>reduce</code> now expects a flipped reducer function <code>(x, acc)</code> rather than <code>(acc, x)</code></li>
+<li><code>add</code> No longer does type coercion to the values passed in</li>
+<li><code>find</code> and <code>findIndex</code> now use the built in higher order functions</li>
+<li>Moved <code>last</code> and <code>first</code> into the list type rather than array</li>
+<li>Flipped the way <code>subtract</code> does math instead of <code>subtract(2, 1) === 2 - 1</code> it will now be <code>subtract(1, 2) === 2 - 1</code></li>
+<li><code>mean</code> has gone back to returning <code>NaN</code> if given an empty array and will throw a <code>Ref Error</code> if given no params</li>
+<li><code>range</code> will not return a type error if given a string</li>
+<li>Re wrote <code>isEqual</code> again, making it far more flexible again as well as far more performant</li>
+<li><code>omit</code> now requires you to send an array of keys even if it&#39;s just one</li>
+<li><code>difference</code> no longer cares about array order, and accepts an array of arrays</li>
+<li><code>apply</code> now always requires an array for values</li>
+</ul>
+<h3 id="improved-5">Improved</h3>
+<ul>
+<li><strong>Huge performance gains, added internal curry backend since functions rely on each other so much</strong></li>
+<li>Replaced <code>uglify-js</code> with <code>terser</code></li>
+<li>Moved <code>mean</code> to Number type rather than Array type</li>
+<li>Also cleaned up <code>mean</code></li>
+<li>Cleaned up and fixed the <code>mean</code> documentation</li>
+<li>Cleaned up <code>complement</code> and <code>reject</code> documentation</li>
+<li>Param rename in <code>pipe</code> to be more verbose/accurate</li>
+<li>Cleaned up <code>sortBy</code></li>
+<li>Cleaned up <code>gcd</code></li>
+<li>Cleaned up <code>factors</code></li>
+<li>Moved <code>length</code> to list type</li>
+<li><code>isEqual</code>&#39;s documentation needed more examples</li>
+<li><code>isEqual</code> is able to handle <code>Set</code> data types</li>
+<li><code>isEmpty</code> uses <code>isNil</code> now instead of <code>!x</code></li>
+<li><code>isOdd</code> and <code>isEven</code> both cleaned up nicely</li>
+<li>Moved <code>range</code> to number type</li>
+<li><code>height</code> improvements to use <code>.values</code> vs <code>.keys</code></li>
+</ul>
+<h3 id="new-10">New</h3>
+<ul>
+<li>Added <code>flip</code> function which flips the params sent to a given function</li>
+<li>Added <code>eqBy</code> function which compares two values after applying a function to both</li>
+<li>Added <code>negate</code> function which adds a negative to a given number</li>
+<li>Added <code>composeP</code> function which works like <code>compose</code> but with Promises</li>
+<li>Added <code>pipeP</code> function which works like <code>pipe</code> but with Promises</li>
+<li>Added <code>replace</code> function which takes a string and replaces a value within it</li>
+<li>Added <code>countBy</code> function which takes an array and counts the values</li>
+<li>Added <code>amend</code> function which amends a new object into an old to update data</li>
+<li>Added <code>clamp</code> function which clamps a number between 2 others</li>
+<li>Added <code>defaultTo</code> function which returns a value unless it is <code>NaN</code>, <code>undefined</code>, or <code>null</code> then it returns a default</li>
+<li>Added <code>reduceRight</code> function which works like <code>reduce</code> but starts from the right of the array</li>
+</ul>
+<h2 id="v092">v0.9.2</h2>
+<h3 id="deprecated">Deprecated</h3>
+<ul>
+<li><code>is</code> There isn&#39;t a solid enough use case for this aside from maybe a test suite, this is also pretty messy data wise<ul>
+<li>Try using <code>type</code> instead</li>
+</ul>
+</li>
+<li><code>identical</code> As it is going to become the <code>eq</code> function in v0.10.0</li>
+<li><code>compact</code> use <code>filter</code> instead</li>
+<li><code>compress</code> use <code>sift</code> instead</li>
+<li><code>words</code> The use case is basically just using <code>split</code> anyway</li>
+</ul>
+<h3 id="fixed-10">Fixed</h3>
+<ul>
+<li>Incorrect documentation on <code>compose</code></li>
+<li>Typo in <code>includes</code> documentation</li>
+</ul>
+<h2 id="v091">v0.9.1</h2>
+<h3 id="deprecated-1">Deprecated</h3>
+<ul>
+<li><code>clone</code> : There is no real need for this since every function already shallow clones data, and a deep clone is shaky ground at best</li>
+<li><code>head</code> : Bad use case, objects are in no particular order</li>
+<li><code>tail</code> : Bad use case, objects are in no particular order</li>
+</ul>
+<h3 id="fixed-11">Fixed</h3>
+<ul>
+<li>Added description to <code>compose</code> function</li>
+</ul>
+<h3 id="improved-6">Improved</h3>
+<ul>
+<li>The documentation for <code>any</code> and <code>whole</code> didn&#39;t make a lot of sense</li>
+<li><code>round</code> description needed a slight tweak</li>
+<li>Made <code>add</code>, <code>div</code>, <code>mul</code>, and <code>sub</code> descriptions a bit more strict</li>
+</ul>
+<h2 id="v090">v0.9.0</h2>
+<blockquote>
+<p><strong>Notice:</strong> All deprecated functions will be removed in the v0.10.0 release</p>
+</blockquote>
+<h3 id="breaking-changes-6">Breaking Changes</h3>
+<ul>
+<li><code>isEqual</code> now takes order of arrays into consideration and will return false if arrays do not match in order</li>
+<li><code>when</code> is no longer a maybe return and should give back the original data passed in. It also supports only a single param passed in</li>
+<li>New <code>List</code> type for similar functions that apply to a List of characters (string) and a List of items (Array)<ul>
+<li><code>slice</code> has been moved to this type</li>
+<li><code>includes</code> has been moved to this type</li>
+<li><code>concat</code> has been moved to this type</li>
+<li><code>reversed</code> has been moved to this type</li>
+<li><code>nth</code> has been moved to this type</li>
+</ul>
+</li>
+<li><code>concat</code> flow changed a little bit to work more like built in concat<ul>
+<li>In order to achieve array type simply use <code>concatMap</code> like so: <code>concatMap(x =&gt; x, [[1, 2], [3, 4], [5, 6]])</code></li>
+</ul>
+</li>
+<li><code>range</code> now requires you to pass 2 params to it, it is curried out of the box as well.</li>
+<li>The parameters for <code>gt</code>, <code>gte</code>, <code>lt</code> and <code>lte</code> have been flipped to meet the proper data last structure</li>
+</ul>
+<h3 id="deprecated-2">Deprecated</h3>
+<ul>
+<li><code>pluck</code> : Shaky code stack, and lack of use cases that <code>props</code> and <code>prop</code> can&#39;t handle</li>
+<li><code>strip</code> : No real use cases to benefit from this</li>
+<li><code>empty</code> : No real use cases to benefit from this</li>
+<li><code>contains</code> : Use <code>includes</code> within the list type</li>
+</ul>
+<h3 id="fixed-12">Fixed</h3>
+<ul>
+<li><code>filter</code> had incorrect data types within its documentation</li>
+<li><code>when</code> documentation typos and no longer hard to read</li>
+</ul>
+<h3 id="new-11">New</h3>
+<ul>
+<li>Added <code>always</code> function which takes 2 params and always returns the first one. Good for pipes since its curried</li>
+<li>Added <code>compose</code> function (finally)</li>
+<li>Added <code>unless</code> function which takes 3 params, and acts the opposite of <code>when</code></li>
+<li>Added <code>split</code> function which takes a char and a string and splits the string based on the char</li>
+<li>Added <code>takeWhile</code> function which will take values from an array based on a function boolean</li>
+<li>Added <code>dropWhile</code> function which will drop values from an array based on a function boolean</li>
+<li>Added <code>apply</code> function which takes an array of data and applys a function to it</li>
+<li>Added <code>either</code> function which takes 2 functions and a value and if either function returns truthy will return true</li>
+<li>Added <code>endsWith</code> function which checks if the passed in list ends with the given value</li>
+</ul>
+<h3 id="improved-7">Improved</h3>
+<ul>
+<li>Documentation for <code>includes</code> and <code>identity</code> functions</li>
+<li>Removed unused code (<code>circular</code> and <code>isObject</code>)</li>
+<li>Added handling for an edge case with <code>Object.keys</code> inside of <code>isEqual</code></li>
+</ul>
+<h2 id="v083">v0.8.3</h2>
+<h3 id="new-12">New</h3>
+<ul>
+<li>Added <code>isPrime</code> function which accepts a number and determines if its prime or not</li>
+<li>Added <code>factors</code> function which accepts a number and finds its factors</li>
+</ul>
+<h3 id="improved-8">Improved</h3>
+<ul>
+<li>Tweaked <code>range</code> handling and flow to work better with <code>factors</code></li>
+</ul>
+<h3 id="fixed-13">Fixed</h3>
+<ul>
+<li>Case where passing a string number to range might produce weird results</li>
+</ul>
+<h2 id="v082">v0.8.2</h2>
+<h3 id="fixed-14">Fixed</h3>
+<ul>
+<li>No longer packaging unwanted items like coverage results</li>
+</ul>
+<h3 id="improved-9">Improved</h3>
+<ul>
+<li>Slightly the build process of the module (pre-publish/release anyway)</li>
+</ul>
+<h2 id="v081">v0.8.1</h2>
+<h3 id="new-13">New</h3>
+<ul>
+<li>Added 2nd level Modularity you can now request sections of the library by type<ul>
+<li>Example: <code>import KO from &#39;kyanite/object</code> See the <code>Modular By Datatype</code> section of the readme</li>
+</ul>
+</li>
+</ul>
+<h3 id="fixed-15">Fixed</h3>
+<ul>
+<li>Documentation spelling error for <code>path</code></li>
+<li>Documentation is now Consistent to the linter and the rest of the module</li>
+</ul>
+<h2 id="v080">v0.8.0</h2>
+<h3 id="breaking-changes-7">Breaking Changes</h3>
+<ul>
+<li><code>assign</code> is now curried and expects a minimum of 2 values passed in</li>
+</ul>
+<h3 id="deprecated-3">Deprecated</h3>
+<ul>
+<li><code>deepClone</code> : Use <code>clone</code> instead, to mimic the deep clone functionality do this: <code>clone({ a: 1 }, true)</code></li>
+</ul>
+<h3 id="new-14">New</h3>
+<ul>
+<li>Added new <code>clone</code> function, it can create a shallow clone for Objects however accepts a 2nd param to use deep clone capabilities</li>
+<li>New <code>unzip</code> function which takes an object and breaks down into two arrays one of keys and one of values</li>
+</ul>
+<h3 id="improved-10">Improved</h3>
+<ul>
+<li>Re wrote the assign function using <code>Object.keys</code> to remove the need for <code>for in</code> looping and checking <code>hasOwnProperty</code></li>
+<li>Slight tweaks to <code>has</code> and <code>assign</code> unit tests</li>
+<li>Added function names to descriptions of tests to verify what is testing what</li>
+<li>Further unit test improvements</li>
+</ul>
+<h3 id="fixed-16">Fixed</h3>
+<ul>
+<li>The documentation for <code>when</code> was missing a description, this has been addressed</li>
+</ul>
+<h2 id="v071">v0.7.1</h2>
+<h3 id="improved-11">Improved</h3>
+<ul>
+<li>Replaced null check within <code>defaults</code> with <code>isNil</code> to keep non strict to a minimum</li>
+</ul>
+<h2 id="v070">v0.7.0</h2>
+<h3 id="breaking-changes-8">BREAKING CHANGES</h3>
+<ul>
+<li>Swapped param usage for <code>div</code> functionality<ul>
+<li>Ex: <code>div(4, 2) // =&gt; 2</code> should now be <code>div(2, 4) // =&gt; 2</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="new-15">New</h3>
+<ul>
+<li>Added number <code>pow</code> function which takes an exponent and base number and rises the number to the exponents value</li>
+<li>Added number <code>rem</code> function which finds the remainder of two numbers</li>
+<li>Added number <code>isOdd</code> function which checks if the provided number is odd or not</li>
+<li>Added number <code>isEven</code> function which checks if the provided number is even or not</li>
+<li>Added string <code>toUpper</code> function which transforms a string to all upper case</li>
+<li>Added string <code>toLower</code> function which transforms a string to all lower case</li>
+</ul>
+<h3 id="improved-12">Improved</h3>
+<ul>
+<li>Removed unreachable code block from equals functionality</li>
+</ul>
+<h3 id="fixed-17">Fixed</h3>
+<ul>
+<li>Coverage for <code>tail</code> and <code>head</code> functions</li>
+</ul>
+<h2 id="v060">v0.6.0</h2>
+<h3 id="breaking-changes-9">BREAKING CHANGES</h3>
+<ul>
+<li>Completely re wrote <code>sift</code> to act as a for real filter, instead of another <code>omit</code></li>
+<li>Complete re work of <code>isEqual</code> in an attempt to make it much more lightweight<ul>
+<li>IMPORTANT: This method will no longer handle/care about recursive data in objects so if you are comparing potential circular/recursive data you will get a memory stack error</li>
+<li>It can still compare Primitive types, as well as Arrays, Objects, Dates, RegExp, and memory like Promises</li>
+<li>Dropped support for items like Object based Booleans/Strings (<code>new Boolean</code>), Maps, Errors, And a lot of the really super rare edge cases</li>
+</ul>
+</li>
+</ul>
+<h3 id="fixed-18">Fixed</h3>
+<ul>
+<li>Compatibility patch for using <code>isEqual</code> in IE</li>
+<li>Documentation bug not showing arguments for functions</li>
+<li>fuzzySearch param naming in documentation was inconsistent</li>
+</ul>
+<h3 id="new-16">New</h3>
+<ul>
+<li>Added a new <code>draft</code> function for objects which essentially applies a provided function to all of the values within an object (essentially an object map)</li>
+<li>Re categorized <code>fuzzySearch</code> as a String function rather than a normal function</li>
+</ul>
+<h3 id="improved-13">Improved</h3>
+<ul>
+<li><code>isEqual</code> gained a lot of improvements to performance, this is also dependent on the size/format of the data being compared</li>
+<li><code>isEqual</code> file size has dropped by a lot with the new re write</li>
+</ul>
+<h2 id="v050">v0.5.0</h2>
+<h3 id="breaking-changes-10">BREAKING CHANGES</h3>
+<ul>
+<li>Tweaked how <code>max</code> was running it&#39;s comparisons</li>
+<li>Tweaked how <code>min</code> was running it&#39;s comparisons</li>
+</ul>
+<h3 id="new-17">New</h3>
+<ul>
+<li>Added <code>head</code> function for objects, which pulls the first value from it</li>
+<li>Added <code>tail</code> function for objects, which pulls the last value from it</li>
+<li>Added <code>maxBy</code> function which applies a function to each value before comparing the max</li>
+<li>Added <code>minBy</code> function which applies a function to each value before comparing the min</li>
+<li>Added <code>zip</code> function which takes two arrays and turns them into an object key value pair</li>
+</ul>
+<h2 id="v041">v0.4.1</h2>
+<h3 id="fixed-19">Fixed</h3>
+<ul>
+<li><code>fuzzySearch</code> algorithm is stable again and extremely more accurate than before<ul>
+<li>I may need to look into a better solution than I currently have for it however</li>
+</ul>
+</li>
+</ul>
+<h3 id="improved-14">Improved</h3>
+<ul>
+<li>Added more complex testing strings to <code>fuzzySearch</code> tests</li>
+</ul>
+<h2 id="v040">v0.4.0</h2>
+<h3 id="breaking-changes-11">BREAKING CHANGES</h3>
+<ul>
+<li>Renamed <code>gets</code> to <code>props</code> to meep the convention consistent</li>
+<li>Renamed <code>includes</code> to <code>contains</code> for strings (swapped with array)</li>
+<li>Renamed <code>contains</code> to <code>includes</code> for arrays (swapped with string)</li>
+<li>Removed <code>deepClone</code> because <code>assign</code> ultimately generates a brand new object when ran</li>
+</ul>
+<h3 id="new-18">New</h3>
+<ul>
+<li>Added <code>join</code> string function which accepts a string and an array to generate a joined string</li>
+<li>Added <code>branch</code> function which takes 3 functions and a value, and will run either the 2nd or 3rd function based on if the first passes</li>
+<li>Added <code>ap</code> function which takes an array of functions to be applied to an array of data, concating the results together</li>
+<li>Added <code>on</code> function which takes 2 functions and 2 values, applies the 2nd function to both values and then applies the first function onto those</li>
+</ul>
+<h3 id="changes">Changes</h3>
+<ul>
+<li>Converted the function used by compact to just be <code>identity</code></li>
+<li>Added some slight test additions to <code>pipe</code></li>
+<li>Tweaked documentation automation to make sure the main site is always up to date</li>
+</ul>
+<h2 id="v030">v0.3.0</h2>
+<h3 id="changes-1">Changes</h3>
+<ul>
+<li>Re organized the <code>src</code> and <code>test</code> folder contents into seperate folders based on category<ul>
+<li>This is no way affects usage, you can still do <code>import isEmpty from &#39;kyanite/isEmpty&#39;</code> it&#39;s more to make it easier to work with and avoid duplication</li>
+</ul>
+</li>
+<li><code>findIndex</code> returns a maybe, so instead of a -1 if no index is found it will return <code>undefined</code></li>
+<li>The <code>src</code> folder is now included on install, so if you want to use the es6 versions of the module, you can import them from <code>kyanite/src/type/function</code><ul>
+<li>An example might be for curry it&#39;d be: <code>import curry from &#39;kyanite/src/function/curry&#39;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>A few documentation fixes which also involved some missing information/categories</li>
+</ul>
+<h2 id="v022">v0.2.2</h2>
+<h3 id="new-19">New</h3>
+<ul>
+<li>Added <code>encase</code> which encases the provided function with try catch to safely execute the function</li>
+<li>Added <code>drop</code> which takes an array and drops the requested number of values from the front</li>
+<li>Added <code>take</code> which pulls values from an array up until the point specified (the opposite of drop)</li>
+<li>Added <code>sortWith</code> which takes an array of functions and goes through the array when it encounters ties with the data while sorting it</li>
+</ul>
+<h2 id="v021">v0.2.1</h2>
+<h3 id="new-20">New</h3>
+<ul>
+<li>Added <code>findIndex</code> function which takes a function and array and returns the first value from the array that passes the function</li>
+<li>Added <code>groupBy</code> function which groups the values of an array into common properties of an object</li>
+<li>Added <code>sortBy</code> function which sorts an array based on the values when ran through a function</li>
+<li>Added <code>descendBy</code> function which accepts a function to run against values for sorting in descending order</li>
+<li>Added <code>ascendBy</code> function which accepts a function to run against values for sorting in ascending order</li>
+</ul>
+<h2 id="v020">v0.2.0</h2>
+<h3 id="new-21">New</h3>
+<ul>
+<li>Added <code>ascend</code> function which can be used with sort for ascending order</li>
+<li>Added <code>descend</code> function which can be used with sort for descending order</li>
+<li>Added <code>both</code> function which accepts 2 functions and a value, returns true if both functions pass, otherwise returns false</li>
+</ul>
+<h3 id="improved-15">Improved</h3>
+<ul>
+<li>Added ability to handle string numbers to <code>add</code> function</li>
+</ul>
+<h2 id="v010">v0.1.0</h2>
+<h3 id="breaking-changes-if-converting-from-dusty-fns">BREAKING CHANGES (If converting from dusty-fns)</h3>
+<ul>
+<li><code>fuzzySearch</code> params have been swapped, so now its <code>fuzzySearch(needle, haystack)</code> instead</li>
+<li>Renamed <code>removeAt</code> to just  <code>remove</code></li>
+<li>Renamed <code>replaceAt</code> to just <code>update</code></li>
+<li><code>flatten</code> has been removed, consider using <code>concat</code> and <code>concatMap</code> instead</li>
+<li><code>uniq</code> now only looks for an array, use <code>uniqBy</code> in order to use the old functionality</li>
+<li>Removed <code>clone</code> since <code>assign</code> is essentially the same thing with more capabilities</li>
+<li>Function params passed to <code>juxt</code> should now be contained within a single array</li>
+<li>Changed the return of <code>mean</code> so it returns 0 instead of <code>NaN</code> for bad arguments passed in</li>
+<li><code>isEmpty</code> now handles values such as <code>null</code>, <code>undefined</code>, <code>NaN</code>, and <code>Booleans</code> it will return <code>true</code> for ALL of these</li>
+<li><code>empty</code> no longer throws an error for non &quot;emptyables&quot;. Instead it returns <code>undefined</code></li>
+</ul>
+<h3 id="fixed-20">Fixed</h3>
+<ul>
+<li>Addressed copy and paste errors for <code>prepend</code> docs</li>
+<li>Addressed several documentation errors</li>
+</ul>
+<h3 id="improved-16">Improved</h3>
+<ul>
+<li>Some more tweaks to internal documentation scripts</li>
+<li>Replaced <code>ava</code> and converted back to <code>tape</code> (Yay!)</li>
+<li><code>max</code> now uses <code>last</code> internally instead of <code>nth</code> should improve is seperate build size/performance</li>
+<li><code>min</code> now uses <code>first</code> internally instead of <code>nth</code> should improve is seperate build size/performance</li>
+<li>Removed <code>functionName</code> internal since it&#39;s no longer being used</li>
+<li>Improved build size of <code>isEqual</code> by removing impossible logic</li>
+<li>Added onto <code>identical</code> documentation with more examples</li>
+<li>Re-wrote <code>assign</code> for better optimization,</li>
+</ul>
+<h3 id="new-22">New</h3>
+<ul>
+<li>Added <code>path</code> function to safely navigate objects that may or may not have properties</li>
+<li>Added <code>sift</code> function which works a lot like <code>filter</code> but with <code>Object</code> data types</li>
+<li>Added <code>whole</code> function which works a lot like <code>every</code> but with <code>Object</code> data types</li>
+<li>Added <code>any</code> function which works a lot like <code>some</code> but with <code>Object</code> data types</li>
+<li>Added <code>insert</code> function which inserts a data value into a specified index of an array</li>
+<li>Added <code>height</code> function which works like length, however it handles object data types</li>
+<li>Added <code>gets</code> function which goes through an object to pull values requested in an array</li>
+<li>Added <code>plan</code> function which takes a schema object of functions to apply to a matching object of data</li>
+<li>Added <code>gt</code> function which compares the passed in values to determine if one is greater than the other</li>
+<li>Added <code>gte</code> function which compares the passed in values to determine if one is greater than or equal to the other</li>
+<li>Added <code>lt</code> function which compares the passed in values to determine if one is less than the other</li>
+<li>Added <code>lte</code> function which compares the passed in values to determine if one is less than or equal to the other</li>
+<li>Added <code>when</code> function which uses a logic function to trigger an action function if the arguments are true</li>
+<li>Added <code>concat</code> function which concats the values of an array to a new array</li>
+<li>Added <code>concatMap</code> function which applies a function to the values of an array and concats them</li>
+<li>Added <code>compact</code> function which takes an array and removes all falsy values from it</li>
+<li>Added <code>uniqBy</code> function which does what the original <code>uniq</code> was built to do</li>
+</ul>
+</div></main><footer>Powered by <a href="https://github.com/dhershman1/pinet">Pinet</a></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script><script src="static/js/search.js"></script></div></body></html>
