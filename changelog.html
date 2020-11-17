@@ -6,9 +6,14 @@
 <li>Updated all dev dependencies</li>
 <li>Removed david-dm badges because it doesn&#39;t seem like david-dm is ever coming back</li>
 </ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Some linting errors with new version of standardjs</li>
+<li>Dropped unused scripts</li>
+</ul>
 <p>All notable changes to this project will be documented in this file. See <a href="https://github.com/conventional-changelog/standard-version">standard-version</a> for commit guidelines.</p>
 <h2 id="141-2020-07-02"><a href="https://github.com/dhershman1/kyanite/compare/v1.4.0...v1.4.1">1.4.1</a> (2020-07-02)</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed-1">Fixed</h3>
 <ul>
 <li>Removed module property from <code>package.json</code> so webpack should bundle it properly using the ie compatible build</li>
 </ul>
@@ -48,7 +53,7 @@
 <ul>
 <li>Added a <code>pluck</code> function which returns a new array by plucking the same named property off all objects in the array supplied</li>
 </ul>
-<h2 id="fixed-1">Fixed</h2>
+<h2 id="fixed-2">Fixed</h2>
 <ul>
 <li>Documentation types for <code>map</code></li>
 </ul>
@@ -62,7 +67,7 @@
 <ul>
 <li>Added more examples to <code>isNil</code></li>
 </ul>
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 <ul>
 <li>Typo in <code>isNil</code> examples</li>
 </ul>
@@ -101,7 +106,7 @@
 <li>Switched over to use the <a href="https://github.com/dhershman1/pinet#readme">pinet</a> engine for building the docs</li>
 <li>Cleaned up <code>isPrime</code> slightly, debating if the trial division approach is still best or not</li>
 </ul>
-<h3 id="fixed-3">Fixed</h3>
+<h3 id="fixed-4">Fixed</h3>
 <ul>
 <li>CI breaking the CNAME definitions</li>
 </ul>
@@ -117,7 +122,7 @@
 <ul>
 <li>Added <code>startsWith</code> function, which should work just like <code>endsWith</code> but with the beginning of a list.</li>
 </ul>
-<h3 id="fixed-4">Fixed</h3>
+<h3 id="fixed-5">Fixed</h3>
 <ul>
 <li><code>isPrime</code> should handle edge cases like 0 a correctly now and return false instead of 0 (#121)</li>
 <li><code>endsWith</code> signature to reflect list instead of Array</li>
@@ -133,7 +138,7 @@
 <li>Added the <code>propOr</code> Function which returns the value of a property from an object or the provided default value</li>
 <li>CircleCI will now handle publishing the documentation to the <code>gh-pages</code> branch</li>
 </ul>
-<h3 id="fixed-5">Fixed</h3>
+<h3 id="fixed-6">Fixed</h3>
 <ul>
 <li>Documentation for functions showing up <code>deprecated</code> when they were actually not</li>
 <li>Documentation for <code>join</code> moved it to the <code>Array</code> Category, and fixed a typo in it&#39;s example</li>
@@ -150,12 +155,12 @@
 <li>Added <code>propEq</code> function which takes a object property value and compares it against a given value to see if it&#39;s equal</li>
 <li>Added <code>notEq</code> function which checks if the provided values are not equal to each other</li>
 </ul>
-<h3 id="fixed-6">Fixed</h3>
+<h3 id="fixed-7">Fixed</h3>
 <ul>
 <li>The documentation for <code>and</code> should now reflect correctly on the return and params</li>
 </ul>
 <h2 id="v0121">v0.12.1</h2>
-<h3 id="fixed-7">Fixed</h3>
+<h3 id="fixed-8">Fixed</h3>
 <ul>
 <li><code>pathOr</code> and <code>path</code> breaking on <code>null</code> value</li>
 </ul>
@@ -180,7 +185,7 @@
 <ul>
 <li><code>pipe</code> &amp; <code>pipeP</code> are now using the Kyanite <code>reduce</code> giving them a small performance boost</li>
 </ul>
-<h3 id="fixed-8">Fixed</h3>
+<h3 id="fixed-9">Fixed</h3>
 <ul>
 <li>Fixed a lot of signature displays through out the docs</li>
 <li>Documentation Fixes:<ul>
@@ -204,7 +209,7 @@
 </li>
 <li>Switched over to <a href="https://circleci.com/">Circleci</a> and <a href="https://codecov.io/">Codecov</a></li>
 </ul>
-<h3 id="fixed-9">Fixed</h3>
+<h3 id="fixed-10">Fixed</h3>
 <ul>
 <li>TS types<ul>
 <li>Added <code>addIndex</code> type</li>
@@ -284,7 +289,7 @@
 <li>Tweaked <code>height</code> function for a tiny performance boost</li>
 </ul>
 <h2 id="v0103">v0.10.3</h2>
-<h3 id="fixed-10">Fixed</h3>
+<h3 id="fixed-11">Fixed</h3>
 <ul>
 <li>Updated <strong>Dev</strong> Dependency <code>npm-run-all</code> to fix the critical security vulnerability</li>
 <li>Homepage url to point to <a href="https://kyanite.dusty.codes">https://kyanite.dusty.codes</a></li>
@@ -302,7 +307,7 @@
 <li>README organization to help alleviate confusion</li>
 <li>Documentation for <code>partition</code>, <code>max</code>, <code>min</code>, <code>maxBy</code>, and <code>minBy</code> to be a bit easier to understand</li>
 </ul>
-<h3 id="fixed-11">Fixed</h3>
+<h3 id="fixed-12">Fixed</h3>
 <ul>
 <li><code>range</code> will no longer show up under the <code>Function</code> category</li>
 <li>Docs for <code>find</code> so that the return is accurate</li>
@@ -313,7 +318,7 @@
 <li><code>List</code> type docs to depict String &amp; Array signatures or &quot;List&quot; signatures</li>
 </ul>
 <h2 id="v0101">v0.10.1</h2>
-<h3 id="fixed-12">Fixed</h3>
+<h3 id="fixed-13">Fixed</h3>
 <ul>
 <li><code>omit</code> documentation to show correct input</li>
 </ul>
@@ -409,7 +414,7 @@
 <li><code>compress</code> use <code>sift</code> instead</li>
 <li><code>words</code> The use case is basically just using <code>split</code> anyway</li>
 </ul>
-<h3 id="fixed-13">Fixed</h3>
+<h3 id="fixed-14">Fixed</h3>
 <ul>
 <li>Incorrect documentation on <code>compose</code></li>
 <li>Typo in <code>includes</code> documentation</li>
@@ -421,7 +426,7 @@
 <li><code>head</code> : Bad use case, objects are in no particular order</li>
 <li><code>tail</code> : Bad use case, objects are in no particular order</li>
 </ul>
-<h3 id="fixed-14">Fixed</h3>
+<h3 id="fixed-15">Fixed</h3>
 <ul>
 <li>Added description to <code>compose</code> function</li>
 </ul>
@@ -461,7 +466,7 @@
 <li><code>empty</code> : No real use cases to benefit from this</li>
 <li><code>contains</code> : Use <code>includes</code> within the list type</li>
 </ul>
-<h3 id="fixed-15">Fixed</h3>
+<h3 id="fixed-16">Fixed</h3>
 <ul>
 <li><code>filter</code> had incorrect data types within its documentation</li>
 <li><code>when</code> documentation typos and no longer hard to read</li>
@@ -494,12 +499,12 @@
 <ul>
 <li>Tweaked <code>range</code> handling and flow to work better with <code>factors</code></li>
 </ul>
-<h3 id="fixed-16">Fixed</h3>
+<h3 id="fixed-17">Fixed</h3>
 <ul>
 <li>Case where passing a string number to range might produce weird results</li>
 </ul>
 <h2 id="v082">v0.8.2</h2>
-<h3 id="fixed-17">Fixed</h3>
+<h3 id="fixed-18">Fixed</h3>
 <ul>
 <li>No longer packaging unwanted items like coverage results</li>
 </ul>
@@ -515,7 +520,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="fixed-18">Fixed</h3>
+<h3 id="fixed-19">Fixed</h3>
 <ul>
 <li>Documentation spelling error for <code>path</code></li>
 <li>Documentation is now Consistent to the linter and the rest of the module</li>
@@ -541,7 +546,7 @@
 <li>Added function names to descriptions of tests to verify what is testing what</li>
 <li>Further unit test improvements</li>
 </ul>
-<h3 id="fixed-19">Fixed</h3>
+<h3 id="fixed-20">Fixed</h3>
 <ul>
 <li>The documentation for <code>when</code> was missing a description, this has been addressed</li>
 </ul>
@@ -571,7 +576,7 @@
 <ul>
 <li>Removed unreachable code block from equals functionality</li>
 </ul>
-<h3 id="fixed-20">Fixed</h3>
+<h3 id="fixed-21">Fixed</h3>
 <ul>
 <li>Coverage for <code>tail</code> and <code>head</code> functions</li>
 </ul>
@@ -586,7 +591,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="fixed-21">Fixed</h3>
+<h3 id="fixed-22">Fixed</h3>
 <ul>
 <li>Compatibility patch for using <code>isEqual</code> in IE</li>
 <li>Documentation bug not showing arguments for functions</li>
@@ -617,7 +622,7 @@
 <li>Added <code>zip</code> function which takes two arrays and turns them into an object key value pair</li>
 </ul>
 <h2 id="v041">v0.4.1</h2>
-<h3 id="fixed-22">Fixed</h3>
+<h3 id="fixed-23">Fixed</h3>
 <ul>
 <li><code>fuzzySearch</code> algorithm is stable again and extremely more accurate than before<ul>
 <li>I may need to look into a better solution than I currently have for it however</li>
@@ -708,7 +713,7 @@
 <li><code>isEmpty</code> now handles values such as <code>null</code>, <code>undefined</code>, <code>NaN</code>, and <code>Booleans</code> it will return <code>true</code> for ALL of these</li>
 <li><code>empty</code> no longer throws an error for non &quot;emptyables&quot;. Instead it returns <code>undefined</code></li>
 </ul>
-<h3 id="fixed-23">Fixed</h3>
+<h3 id="fixed-24">Fixed</h3>
 <ul>
 <li>Addressed copy and paste errors for <code>prepend</code> docs</li>
 <li>Addressed several documentation errors</li>

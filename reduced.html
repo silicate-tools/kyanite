@@ -29,10 +29,12 @@
  * fn(<span class="hljs-number">1</span><span class="hljs-number">0</span>) // =&gt; <span class="hljs-number">1</span><span class="hljs-number">0</span>
  */
 const reduced = x =&gt;
-  x &amp;&amp; x[<span class="hljs-string">'</span>@@transducer/reduced<span class="hljs-string">'</span>] ? x : {
-    <span class="hljs-string">'</span>@@transducer/value<span class="hljs-string">'</span>: x,
-    <span class="hljs-string">'</span>@@transducer/reduced<span class="hljs-string">'</span>: true
-  }
+  x &amp;&amp; x[<span class="hljs-string">'</span>@@transducer/reduced<span class="hljs-string">'</span>]
+    ? x
+    : {
+        <span class="hljs-string">'</span>@@transducer/value<span class="hljs-string">'</span>: x,
+        <span class="hljs-string">'</span>@@transducer/reduced<span class="hljs-string">'</span>: true
+      }
 
 export default reduced
 </code></pre></div></main><footer>Powered by <a href="https://github.com/dhershman1/pinet">Pinet</a></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script><script src="static/js/search.js"></script></div></body></html>

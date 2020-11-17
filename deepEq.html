@@ -31,8 +31,8 @@ const _arrFromIter = iter =&gt; {
 }
 
 const _uniqContentEquals = (aIterator, bIterator, stackA, stackB) =&gt; {
-  var a = _arrFromIter(aIterator)
-  var b = _arrFromIter(bIterator)
+  const a = _arrFromIter(aIterator)
+  const b = _arrFromIter(bIterator)
 
   function _eq (_a, _b) {
     return deepEq(_a, _b, stackA.slice(), stackB.slice())
