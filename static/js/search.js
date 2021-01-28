@@ -1,9 +1,10 @@
-const search = document.getElementById('filter')
+const search = document.getElementById('pinetFilter')
 const navItems = Array.from(document.querySelectorAll('.nav__item'))
+const functionSet = new Set(navItems.map(el => el.getAttribute('name').toLowerCase()))
 
 /* eslint-disable no-labels */
 
-/* global hljs */
+/* global hljs, location */
 
 hljs.initHighlightingOnLoad()
 
@@ -34,6 +35,28 @@ const fuzzySearch = (needle, haystack) => {
   }
 
   return true
+}
+
+search.onkeyup = ({ key, target }) => {
+  const search = target.value.toLowerCase()
+
+  if (key.toLowerCase() === 'enter') {
+    if (functionSet.has(search)) {
+      location.hash = search
+
+      return true
+    }
+
+    for (const func of functionSet) {
+      if (fuzzySearch(search, func)) {
+        location.hash = func
+
+        return true
+      }
+    }
+  }
+
+  return false
 }
 
 search.oninput = ({ target }) => {
